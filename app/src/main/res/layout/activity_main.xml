@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/god" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/art"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="@dimen/_285sdp"
+        android:id="@+id/display"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/salam_ramadhan"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_40sdp"
+        app:layout_constraintBottom_toBottomOf="@id/display"
+        app:layout_constraintEnd_toEndOf="@id/display"
+        app:layout_constraintStart_toStartOf="@id/display"
+        app:layout_constraintTop_toTopOf="@id/display" />
+
+    <Button
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        android:id="@+id/increasebtn"/>
+
+    <ImageView
+        android:id="@+id/on"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_450sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/restart"
+        app:layout_constraintTop_toBottomOf="@id/display"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_35sdp"
+        android:layout_marginVertical="@dimen/_18sdp"
+        android:id="@+id/restart"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/decrease"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginVertical="@dimen/_25sdp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/akaya_telivigala"
+        android:padding="@dimen/_10sdp"
+        android:text="Decrease-"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
